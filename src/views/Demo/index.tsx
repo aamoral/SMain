@@ -1,10 +1,9 @@
 import * as React from 'react';
 import { connect } from 'dva';
-import './App.css';
+import './Demo.css';
 
 
-import logo from './logo.svg';
-
+import logo from '../../logo.svg';
 
 interface iProps {
   login: (username: string, password: string) => void;
