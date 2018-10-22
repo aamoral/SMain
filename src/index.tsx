@@ -2,7 +2,7 @@ import * as React from 'react';
 import dva from 'dva';
 import { Router, Route, Switch } from 'dva/router';
 import views from './router';
-import './index.css';
+import './index.less';
 import registerServiceWorker from './registerServiceWorker';
 import user from './model/user';
 
