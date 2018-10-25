@@ -7,7 +7,7 @@ import icon1 from './images/icon1.svg'
 import icon2 from './images/icon2.svg'
 import icon3 from './images/icon3.svg'
 //import brief from './images/brief.png'
-
+import  './moment'
 
 
 
@@ -119,10 +119,8 @@ class App extends React.Component{
                         </tr>
                         <tr>
                             <td></td>
-                            <td>{moment().format("YYYY-MM-DD-dddd HH:mm:ss")}</td>
-                        </tr>
-                        
-                        
+                            <td>{moment(new Date()).format('LL-dddd')}</td>
+                        </tr>                       
                         <tr>
                             <td>地址：</td>
                             <td>北京昌平区回龙观东大街338号创客广场A座303</td>
