@@ -12,8 +12,9 @@ import icon3 from './images/icon3.svg'
 
 
 class App extends React.Component{
-
+    
     public render(){
+        const moment =require('moment');
         return(
             <div id="app">
             <div data-reactroot id="homeView">
@@ -114,7 +115,14 @@ class App extends React.Component{
                         <tr>
                             <td></td>
                             <td>10:00 - 19:00;&nbsp;(周一至周五，法定节假日除外)</td>
+                            
                         </tr>
+                        <tr>
+                            <td></td>
+                            <td>{moment().format("YYYY-MM-DD-dddd HH:mm:ss")}</td>
+                        </tr>
+                        
+                        
                         <tr>
                             <td>地址：</td>
                             <td>北京昌平区回龙观东大街338号创客广场A座303</td>
